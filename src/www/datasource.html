@@ -52,8 +52,8 @@
         <li><a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a></li>
         <li><a class="mdl-navigation__link" href="visualizations.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">assessment</i>Visualization</a></li>
         <li><a class="mdl-navigation__link" href="datasource.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">tab</i>Data Source</a></li>
-        <li><a class="mdl-navigation__link" href="newvisualization.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>New Visualization</a></li>
-        <li><a class="mdl-navigation__link" href="newdatasource.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">build</i>New Data Source</a></li>
+        <!-- <li><a class="mdl-navigation__link" href="newvisualization.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>New Visualization</a></li>
+        <li><a class="mdl-navigation__link" href="newdatasource.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">build</i>New Data Source</a></li> -->
 
       </ul><br>
     </div>
@@ -61,9 +61,11 @@
     <div class="col-sm-10">
       <h1>Data Sources</h1>
 
-      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+      <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" data-toggle="modal" data-target="#myModal">
         <i class="material-icons">add</i>
       </button>
+
+
 
       <br>
       <br>
@@ -130,6 +132,141 @@
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">New Data Source</h4>
+      </div>
+
+
+      <div class="modal-body">
+
+        <div class="form-group">
+
+
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <label class="mdl-textfield__label" for="sample3">Data Source Name</label>
+              <br>
+              <input class="mdl-textfield__input" type="text" id="sample3">
+            </div>
+          </form>
+
+          <br>
+
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <label class="mdl-textfield__label" for="sample3">Database Server URL</label>
+              <br>
+              <input class="mdl-textfield__input" type="text" id="sample3">
+            </div>
+          </form>
+
+
+          <br>
+
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <label class="mdl-textfield__label" for="sample3">Username</label>
+              <br>
+              <input class="mdl-textfield__input" type="text" id="sample3">
+            </div>
+          </form>
+
+
+          <br>
+
+
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <label class="mdl-textfield__label" for="sample3">Password</label>
+              <br>
+              <input class="mdl-textfield__input" type="text" id="sample3">      
+            </div>
+          </form>
+
+          <br>
+
+
+
+        </div>
+
+      </div>
+
+
+
+<!--
+
+      <div class="col-sm-10">
+        <h1>New Data Source</h1>
+        <br>
+        <div class="form-group">
+
+
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <label class="mdl-textfield__label" for="sample3">Data Source Name</label>
+              <br>
+              <input class="mdl-textfield__input" type="text" id="sample3">
+            </div>
+          </form>
+
+          <br>
+
+
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Database Server URL</label>
+              </div>
+            </form>
+
+
+            <br>
+
+
+
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Username</label>
+              </div>
+            </form>
+
+
+            <br>
+
+
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                <input class="mdl-textfield__input" type="text" id="sample3">
+                <label class="mdl-textfield__label" for="sample3">Password</label>
+              </div>
+            </form>
+
+            <br>
+          </div>
+ -->
+
+
+
+
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
 <footer class="container-fluid">
 </footer>
