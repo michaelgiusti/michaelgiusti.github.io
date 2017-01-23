@@ -42,7 +42,7 @@
     <!-- <div class="col-sm-2 sidenav">
       <h4>Vizualization Builder</h4> -->
 
-    <div class="col-sm-2 sidenav">
+    <div class="col-md-2 sidenav">
 
         <h4 class="mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">Visualization Builder</h4>
         <!-- <h4>Visualization Builder</h4> -->
@@ -61,7 +61,7 @@
       </ul><br>
     </div>
 
-    <div class="col-sm-10">
+    <div class="col-md-10">
       <h1>New Visualization</h1>
       <br>
       <div class="form-group">
@@ -78,7 +78,12 @@
           </div>
         </form>
 
-
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" id="sample3">
+            <label class="mdl-textfield__label" for="sample3">Chart Title</label>
+          </div>
+        </form>
 
         <!-- <label for="visualization-description" class="col-2 col-form-label">Description</label>
         <div class="col-10">
@@ -101,32 +106,35 @@
           <option>Database 4</option>
           <option>Database 5</option>
         </select> -->
-
-
-
-
-
-
-
-
-        <div class="btn-group">
-			<button type="button" class="btn btn-primary">Select Data Source</button>
-			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		<div class="">
+        <div class="dropdown">
+			<button class="btn btn-default btn-dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+			Select Data Source   
 			<span class="caret"></span>
-			<span class="sr-only">Toggle Dropdown</span>
 			</button>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Data Source Number 1</a>
-                <a class="dropdown-item" href="#">Data Source Number 2</a>
-                <a class="dropdown-item" href="#">Data Source Number 3</a>
+                <li><a class="dropdown-item" href="#">Data Source Number 1</a></li>
+				<li class="divider"></li>
+                <li><a class="dropdown-item" href="#">Data Source Number 2</a></li>
+				<li class="divider"></li>
+                <li><a class="dropdown-item" href="#">Data Source Number 3</a></li>
             </div>
-        </div>
+		</div>
+		
+		<div class="dropdown">
+			<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Select Chart Type   
+				<span class="caret"></span></button>
+				<ul class="dropdown-menu">
+				<li><a href="#">Bar</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Line</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Pie</a></li>
+			</ul>
+		</div>
 
-
-
-
-        <br>
-
+		</div>
+		
         <!-- <label for="visualization-query">Visualization SQL Query</label>
         <textarea class="form-control" id="visualization-query" rows="10"></textarea> -->
         <!-- <form action="#">
@@ -139,12 +147,16 @@
 
         <!-- Expandable Textfield -->
         <!-- Floating Multiline Textfield -->
-        <form action="#">
-          <div class="mdl-textfield mdl-js-textfield">
-            <textarea class="mdl-textfield__input" type="text" rows= "12" cols="50" id="sample5" ></textarea>
-            <label class="mdl-textfield__label" for="sample5">Visualization SQL Query</label>
-          </div>
-        </form>
+
+		<br>
+		<br>
+  <form>
+    <div class="input-group input-group-lg col-md-5">
+<!--    <input type="text" class="form-control" rows="10" placeholder="Input SQL Query"> -->	        
+		<textarea class="form-control" rows="5" id="query" placeholder="Input SQL Query"></textarea>
+
+    </div>
+  </form>
 
 
 
@@ -158,6 +170,7 @@
         <button type="button" class="btn btn-primary">Submit</button>
       </div>
     </div>
+
   </div>
 </div>
 
