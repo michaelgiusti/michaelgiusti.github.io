@@ -36,6 +36,14 @@
       }
       .row.content {height: auto;}
     }
+
+    .navbar-default {
+      background-color:#f1f1f1;
+      background-image: none;
+      background-repeat: no-repeat;
+      box-shadow: none;
+    }
+
   </style>
 </head>
 <body>
@@ -49,7 +57,7 @@
         <li class="active"><a href="visualizations.html">Visualizations</a></li>
         <li><a href="newvisualization.html">New Visualization</a></li>
         <li><a href="newdatasource.html">New Data Source</a></li> -->
-        <li><a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a></li>
+        <li><a class="mdl-navigation__link" href="home.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">home</i>Home</a></li>
         <li><a class="mdl-navigation__link" href="visualizations.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">assessment</i>Visualization</a></li>
         <li><a class="mdl-navigation__link" href="datasource.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">tab</i>Data Source</a></li>
         <!-- <li><a class="mdl-navigation__link" href="newvisualization.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">inbox</i>New Visualization</a></li>
@@ -59,7 +67,14 @@
     </div>
 
     <div class="col-sm-10">
-      <h1>Data Sources</h1>
+                  <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <h1>Data Sources</h1>
+                </div>
+              </div>
+            </nav>
+
 
       <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--colored" data-toggle="modal" data-target="#myModal">
         <i class="material-icons">add</i>
@@ -151,19 +166,19 @@
         <div class="form-group">
 
 
-
+        <br>
+        <br>
         <form action="#">
           <div class="btn-group">
-        <button type="button" class="btn btn-primary">Data Source Type</button>
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <span class="caret"></span>
-        <span class="sr-only">Toggle Dropdown</span>
-        </button>
-              <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">MySQL</a>
-              </div>
+            <button type="button" class="btn btn-primary">Data Source Type</button>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <span class="caret"></span>
+              <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a href="#">MySQL</a></li>
+            </ul>
           </div>
-
 
           <br>
           <br>
