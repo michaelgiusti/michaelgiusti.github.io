@@ -14,20 +14,17 @@
   <style>
     /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
     .row.content {height: 1500px}
-
     /* Set gray background color and 100% height */
     .sidenav {
       background-color: #f1f1f1;
       height: 100%;
     }
-
     /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
       color: white;
       padding: 15px;
     }
-
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
@@ -113,15 +110,17 @@
 
 
         <div class="btn-group">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Source</button>
-
+			<button type="button" class="btn btn-primary">Select Data Source</button>
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			<span class="caret"></span>
+			<span class="sr-only">Toggle Dropdown</span>
+			</button>
             <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">Data Source Number 1</a>
                 <a class="dropdown-item" href="#">Data Source Number 2</a>
                 <a class="dropdown-item" href="#">Data Source Number 3</a>
             </div>
         </div>
-
 
 
 
@@ -142,7 +141,7 @@
         <!-- Floating Multiline Textfield -->
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield">
-            <textarea class="mdl-textfield__input" type="text" rows= "3" id="sample5" ></textarea>
+            <textarea class="mdl-textfield__input" type="text" rows= "12" cols="50" id="sample5" ></textarea>
             <label class="mdl-textfield__label" for="sample5">Visualization SQL Query</label>
           </div>
         </form>
